@@ -262,17 +262,17 @@ function SidebarTrigger({
 
   return (
     <Button
-      data-sidebar="trigger"
-      data-slot="sidebar-trigger"
-      variant="ghost"
-      size="icon"
-      className={cn("size-7", className)}
-      onClick={(event: unknown) => {
-        onClick?.(event);
-        toggleSidebar();
-      }}
-      {...props}
-    >
+    data-sidebar="trigger"
+    data-slot="sidebar-trigger"
+    variant="ghost"
+    size="icon"
+    className={cn("size-7", className)}
+    onClick={(event) => { // No type annotation needed - TypeScript will infer it
+      onClick?.(event);
+      toggleSidebar();
+    }}
+    {...props}
+  >
       <PanelLeftIcon />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
