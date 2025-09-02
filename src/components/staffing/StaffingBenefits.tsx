@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Clock, Award, Users, CheckCircle, TrendingUp, Link, ArrowRight } from 'lucide-react';
+import { Shield, Clock, Award, TrendingUp, Link, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
 
 export function StaffingBenefits() {

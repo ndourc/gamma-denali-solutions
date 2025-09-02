@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import { Building2, Users, ShoppingBag, Shield, Clock, Briefcase } from 'lucide-react';
+import { Building2, Users, ShoppingBag, Shield } from 'lucide-react';
 
 export function CommercialServices() {
   const services = [

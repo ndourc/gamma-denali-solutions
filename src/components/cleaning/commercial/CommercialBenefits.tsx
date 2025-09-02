@@ -61,7 +61,7 @@ export function CommercialBenefits() {
               Ready to Elevate Your Workspace?
             </h3>
             <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss your commercial cleaning needs and create a customized 
+              Let us discuss your commercial cleaning needs and create a customized 
               solution that keeps your business looking professional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

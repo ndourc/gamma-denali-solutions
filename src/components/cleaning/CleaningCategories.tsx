@@ -49,7 +49,7 @@ export function CleaningCategories() {
               </h3>
               <p className="text-green-100 mb-8 max-w-2xl mx-auto">
                 Contact us today for a free consultation and personalized quote. 
-                We're here to make your life easier and your space more comfortable.
+                We re here to make your life easier and your space more comfortable.
               </p>
               <Button asChild size="lg" variant="secondary">
                 <Link href="/contact">

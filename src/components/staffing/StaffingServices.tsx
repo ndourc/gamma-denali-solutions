@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, UserCheck, Users, Search, FileText, TrendingUp } from 'lucide-react';
+import { Briefcase, UserCheck, Users, FileText, TrendingUp } from 'lucide-react';
 
 export function StaffingServices() {
   const services = [

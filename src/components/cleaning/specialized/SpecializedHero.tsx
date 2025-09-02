@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -23,7 +24,7 @@ export function SpecializedHero() {
               
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 From carpet and upholstery cleaning to pressure washing and eco-friendly solutions, 
-                our specialized services handle the unique cleaning challenges others can't.
+                our specialized services handle the unique cleaning challenges others cannot.
               </p>
 
               <div className="flex items-center gap-6 mb-8">

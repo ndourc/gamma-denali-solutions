@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Sparkles, Package, Calendar, Leaf, Clock } from 'lucide-react';
+import { Home, Sparkles, Package, Calendar, Leaf } from 'lucide-react';
 
 export function ResidentialServices() {
   const services = [

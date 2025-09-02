@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Award, Clock, Heart, CheckCircle, Users } from 'lucide-react';
+import { Shield, Clock, Heart } from 'lucide-react';
 
 export function WhyChooseUs() {
   return (

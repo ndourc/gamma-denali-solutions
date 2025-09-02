@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Phone, Search, UserCheck, CheckCircle } from 'lucide-react';
 
@@ -69,7 +70,7 @@ export function StaffingProcess() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent flex items-center">
                 <div className="p-8 text-white">
                   <h3 className="text-2xl font-bold mb-2">Ready to Find Your Perfect Hire?</h3>
-                  <p className="text-blue-100">Let's discuss your staffing needs today.</p>
+                  <p className="text-blue-100">Let us discuss your staffing needs today.</p>
                 </div>
               </div>
             </div>
