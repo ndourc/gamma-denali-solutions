@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { Heart, Users, Shield, Mail, Phone, MapPin } from 'lucide-react';
 

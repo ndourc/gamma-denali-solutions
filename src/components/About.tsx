@@ -1,5 +1,7 @@
+"use client"
+
 import React from 'react';
-import { Shield, Award, Clock, Heart } from 'lucide-react';
+import { Shield, Clock, Heart } from 'lucide-react';
 
 export function About() {
   return (
