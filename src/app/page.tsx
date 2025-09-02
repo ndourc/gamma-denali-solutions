@@ -21,6 +21,7 @@ export type PageType =
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const renderPage = () => {
     switch (currentPage) {
@@ -43,10 +44,17 @@ export default function App() {
     }
   };
 
-  return (
+     return (
     <div className="min-h-screen bg-gray-50 flex">
-      <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />
-      <main className="flex-1 lg:ml-64">
+      <Sidebar 
+        currentPage={currentPage} 
+        onNavigate={setCurrentPage}
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
+      <main className={`flex-1 lg:ml-64 transition-all duration-300 ${
+        isMobileMenuOpen ? 'blur-sm brightness-75 lg:blur-none lg:brightness-100' : ''
+      }`}>
         {renderPage()}
       </main>
     </div>

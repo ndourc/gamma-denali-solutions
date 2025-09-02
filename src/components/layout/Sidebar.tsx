@@ -19,6 +19,8 @@ import type { PageType } from '@/app/page';
 interface SidebarProps {
   currentPage: PageType;
   onNavigate: (page: PageType) => void;
+  isMobileMenuOpen: boolean;
+  setIsMobileMenuOpen: (open: boolean) => void;
 }
 
 export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
@@ -156,7 +158,6 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           </div>
         ))}
       </nav>
-
       {/* CTA Section */}
       <div className="p-4 border-t border-gray-100">
         <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg p-4 text-white">
@@ -191,16 +192,16 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
 
       {/* Mobile Sidebar */}
       {isMobileOpen && (
-        <>
-          <div 
-            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
-            onClick={() => setIsMobileOpen(false)}
-          />
-          <aside className="lg:hidden fixed left-0 top-0 w-64 h-full z-50">
-            {sidebarContent}
-          </aside>
-        </>
-      )}
+  <>
+    <aside className="lg:hidden fixed left-0 top-0 w-64 h-full z-50 bg-white shadow-xl">
+      {sidebarContent}
+    </aside>
+    <div 
+      className="lg:hidden fixed top-0 left-64 right-0 bottom-0 z-40"
+      onClick={() => setIsMobileOpen(false)}
+    />
+  </>
+)}
     </>
   );
 }
