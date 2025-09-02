@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Service Site",
-  description: "Landing Page for your staffing and cleaning solutions",
+  title: "Gamma Denali Solutions | Professional Staffing & Specialized Cleaning Services UK",
+  description: "Professional staffing solutions and compassionate specialized cleaning services across the UK. Connecting people, supporting lives.",
 };
 
 export default function RootLayout({

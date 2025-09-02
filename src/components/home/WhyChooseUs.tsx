@@ -1,28 +1,26 @@
-"use client"
-
 import React from 'react';
-import { Shield, Clock, Heart } from 'lucide-react';
+import { Shield, Award, Clock, Heart, CheckCircle, Users } from 'lucide-react';
 
-export function About() {
+export function WhyChooseUs() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-16 lg:py-20 bg-slate-50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              Your Trusted Partner in the UK
+              Why Choose Gamma Denali Solutions?
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               We understand that every business and individual has unique needs. Our dual expertise 
-              in staffing and specialized cleaning allows us to provide comprehensive, caring solutions.
+              allows us to provide comprehensive, caring solutions.
             </p>
           </div>
 
-          {/* Company Values */}
+          {/* Values Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                 <Shield className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Trusted & Reliable</h3>
@@ -32,8 +30,8 @@ export function About() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                 <Heart className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Compassionate Care</h3>
@@ -43,8 +41,8 @@ export function About() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
                 <Clock className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Always Available</h3>
@@ -55,14 +53,26 @@ export function About() {
             </div>
           </div>
 
-          {/* Mission Statement */}
-          <div className="bg-slate-50 rounded-2xl p-8 lg:p-12 text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
-            <p className="text-lg text-slate-700 max-w-4xl mx-auto leading-relaxed">
-              To bridge the gap between professional excellence and personal care. Whether connecting 
-              businesses with the right talent or providing specialized cleaning services for those 
-              facing life challenges, we are committed to making a positive difference in our communities.
-            </p>
+          {/* Stats Section */}
+          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">150+</div>
+                <div className="text-slate-600">Successful Placements</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
+                <div className="text-slate-600">Satisfied Clients</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">5+</div>
+                <div className="text-slate-600">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">98%</div>
+                <div className="text-slate-600">Client Satisfaction</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
