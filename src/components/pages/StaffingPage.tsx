@@ -252,7 +252,7 @@ export function StaffingPage({ onNavigate }: StaffingPageProps) {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4"
+                  className="border-white text-blue-700 hover:bg-white hover:text-blue-900 px-8 py-4"
                 >
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now: +44 123 456 7890

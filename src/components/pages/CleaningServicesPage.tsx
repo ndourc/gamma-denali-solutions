@@ -278,7 +278,7 @@ export function CleaningServicesPage({ onNavigate }: CleaningServicesPageProps) 
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-green-700 px-8 py-4"
+                  className="border-white text-green-700 hover:bg-white hover:text-green-900 px-8 py-4"
                 >
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now: +44 123 456 7890
