@@ -7,11 +7,10 @@ import {
   Home, 
   Users, 
   Sparkles, 
-  Building2, 
-  HomeIcon, 
-  Wrench,
   Mail,
-  ChevronDown
+  ChevronDown,
+  Menu,
+  X
 } from 'lucide-react';
 import { cn } from '@/components/ui/utils';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -32,7 +31,12 @@ const navigation = [
   { name: 'Contact Us', href: '/contact', icon: Mail },
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  isMobileMenuOpen?: boolean;
+  setIsMobileMenuOpen?: (open: boolean) => void;
+}
+
+export function Sidebar({ isMobileMenuOpen = false, setIsMobileMenuOpen }: SidebarProps) {
   const pathname = usePathname();
   const [openItems, setOpenItems] = React.useState<string[]>(['Cleaning Services']);
 
@@ -44,10 +48,29 @@ export function Sidebar() {
     );
   };
 
-  return (
-    <div className="fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 z-50">
+  // Auto-close mobile menu when screen size changes to desktop
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && setIsMobileMenuOpen) { 
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [setIsMobileMenuOpen]);
+
+  // Close mobile menu when navigating
+  const handleLinkClick = () => {
+    if (setIsMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  const SidebarContent = () => (
+    <>
       <div className="p-6">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3" onClick={handleLinkClick}>
           <div className="flex gap-1">
             <Users className="w-6 h-6 text-blue-600" />
             <Sparkles className="w-6 h-6 text-green-600" />
@@ -93,6 +116,7 @@ export function Sidebar() {
                         <li key={child.name}>
                           <Link
                             href={child.href}
+                            onClick={handleLinkClick}
                             className={cn(
                               "block px-3 py-2 text-sm rounded-lg transition-colors",
                               pathname === child.href
@@ -110,6 +134,7 @@ export function Sidebar() {
               ) : (
                 <Link
                   href={item.href}
+                  onClick={handleLinkClick}
                   className={cn(
                     "flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg transition-colors",
                     pathname === item.href
@@ -131,12 +156,43 @@ export function Sidebar() {
           <p className="text-xs text-slate-600 mb-2">Ready to get started?</p>
           <Link 
             href="/contact"
+            onClick={handleLinkClick}
             className="inline-flex items-center justify-center w-full px-3 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors"
           >
             Get Free Quote
           </Link>
         </div>
       </div>
-    </div>
+    </>
+  );
+
+  return (
+    <>
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsMobileMenuOpen && setIsMobileMenuOpen(!isMobileMenuOpen)}
+        className="lg:hidden fixed top-4 left-4 z-50 bg-blue-600 hover:bg-blue-700 text-white shadow-xl rounded-xl transition-all duration-200 hover:scale-105 p-3"
+      >
+        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+      </button>
+
+      {/* Desktop Sidebar - always visible on large screens */}
+      <div className="hidden lg:block fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 z-40">
+        <SidebarContent />
+      </div>
+
+      {/* Mobile Sidebar */}
+      {isMobileMenuOpen && (
+        <>
+          <div className="lg:hidden fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 z-50">
+            <SidebarContent />
+          </div>
+          <div 
+            className="lg:hidden fixed top-0 left-64 right-0 bottom-0 z-40"
+            onClick={() => setIsMobileMenuOpen && setIsMobileMenuOpen(false)}
+          />
+        </>
+      )}
+    </>
   );
 }
