@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import React from 'react';
@@ -69,18 +70,22 @@ export function Sidebar({ isMobileMenuOpen = false, setIsMobileMenuOpen }: Sideb
 
   const SidebarContent = () => (
     <>
-      <div className="p-6">
-        <Link href="/" className="flex items-center gap-3" onClick={handleLinkClick}>
-          <div className="flex gap-1">
-            <Users className="w-6 h-6 text-blue-600" />
-            <Sparkles className="w-6 h-6 text-green-600" />
-          </div>
-          <div>
-            <h1 className="text-lg font-bold text-slate-900">Gamma Denali</h1>
-            <p className="text-xs text-slate-600">Solutions</p>
-          </div>
-        </Link>
-      </div>
+  <div className="p-6">
+  <Link href="/" className="flex items-center gap-3" onClick={handleLinkClick}>
+    <div className="flex gap-1">
+      {/* ✅ No Link wrapper - just the image */}
+      <img 
+        src="/gamma_denali_solutions.svg" 
+        alt="Gamma Denali Solutions" 
+        className="h-12 w-auto"
+      />
+    </div>
+    <div>
+      <h1 className="text-lg font-bold text-slate-900">Gamma Denali</h1>
+      <p className="text-xs text-slate-600">Solutions</p>
+    </div>
+  </Link>
+</div>
 
       <nav className="px-4 pb-6">
         <ul className="space-y-2">

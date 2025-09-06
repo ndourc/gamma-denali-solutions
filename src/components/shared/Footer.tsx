@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
-import { Users, Sparkles, Shield, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -13,8 +14,13 @@ export function Footer() {
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex gap-1">
-                  <Users className="w-6 h-6 text-blue-400" />
-                  <Sparkles className="w-6 h-6 text-green-400" />
+                 <div className="flex gap-1">
+                <img 
+                  src="/gamma_denali_solutions.svg" 
+                  alt="Gamma Denali Solutions" 
+                  className="h-12 w-auto"
+                />
+              </div>
                 </div>
                 <h3 className="text-xl font-bold">Gamma Denali Solutions</h3>
               </div>

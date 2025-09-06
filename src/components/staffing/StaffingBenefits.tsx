@@ -64,12 +64,6 @@ export function StaffingBenefits() {
               Get started with a free consultation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="/contact">
-                  Get Free Consultation
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-700">
                 <a href="tel:+44-123-456-7890">
                   Call Now: +44 123 456 7890

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Sidebar } from './Sidebar';
+import { Header } from './Header';
 import { Footer } from '@/components/shared/Footer';
 
 interface LayoutProps {
@@ -30,6 +31,7 @@ export function Layout({ children }: LayoutProps) {
         setIsMobileMenuOpen={setIsMobileMenuOpen}
       />
       <div className="lg:ml-64">
+        <Header/>
         <main className={`min-h-screen transition-all duration-300 ${
           isMobileMenuOpen ? 'blur-sm brightness-75 lg:blur-none lg:brightness-100' : ''
         }`}>

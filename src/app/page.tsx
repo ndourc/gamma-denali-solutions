@@ -11,7 +11,7 @@ import { Contact } from "@/components/shared/Contact";
 export default function Home() {
   return (
     <Layout>
-      <Hero />
+      <Hero/>
       <ServicesOverview />
       <WhyChooseUs />
       <Testimonials />

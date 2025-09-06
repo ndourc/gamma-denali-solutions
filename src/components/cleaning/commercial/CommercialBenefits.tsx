@@ -65,13 +65,13 @@ export function CommercialBenefits() {
               solution that keeps your business looking professional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
+              <Button asChild size="lg" variant="secondary" className="border-white text-blue-600">
                 <Link href="/contact">
                   Get Commercial Quote
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Button asChild size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-800">
                 <a href="tel:+44-123-456-7890">
                   Call: +44 123 456 7890
                 </a>

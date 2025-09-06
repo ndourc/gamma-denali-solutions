@@ -29,9 +29,11 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 lg:py-20 bg-slate-50">
+    <div className="min-h-screen">
+    <section id="contact" className="relative py-16 lg:py-20 bg-slate-50 overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/225232/pexels-photo-225232.jpeg?auto=compress&cs=tinysrgb&w=1200')] bg-cover bg-center opacity-5"></div>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto relative">
           {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
@@ -139,5 +141,6 @@ export function Contact() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

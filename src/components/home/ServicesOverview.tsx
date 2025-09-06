@@ -12,13 +12,18 @@ import {
   ArrowRight
 } from 'lucide-react';
 
+
 export function ServicesOverview() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <div className="min-h-screen">
+    {/* <section id="services" className="relative bg-gradient-to-br py-16 lg:py-20"> */}
+      <section id="services" className="relative bg-gradient-to-br from-blue-50 to-white py-20 lg:py-32 overflow-hidden">
+      <div className="absolute inset-0 bg-[url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200)] bg-cover bg-center opacity-5"></div>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+        
+        <div className="max-w-6xl mx-auto relative">
           <div className="text-center mb-12">
+            
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
               Our Services
             </h2>
@@ -132,5 +137,6 @@ export function ServicesOverview() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
