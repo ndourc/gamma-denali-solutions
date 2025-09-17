@@ -21,14 +21,14 @@ export function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm md:hidden">
       {/* Top bar */}
       <div className="bg-blue-600 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>+44 123 456 7890</span>
+              <span>+44 742 821 2756</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />

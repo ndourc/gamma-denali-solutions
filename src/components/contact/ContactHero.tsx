@@ -18,23 +18,23 @@ export function ContactHero() {
 
           {/* Quick Contact Options */}
           <div className="grid md:grid-cols-3 gap-6">
-            <a href="tel:+44-123-456-7890" className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+            <a href="tel:+44-742-821-2756" className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm border hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                 <Phone className="w-6 h-6 text-blue-600" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-slate-900">Call Us</h3>
-                <p className="text-slate-600 text-sm">+44 123 456 7890</p>
+                <p className="text-slate-600 text-sm">+44 742 821 2756</p>
               </div>
             </a>
 
-            <a href="mailto:hello@gammadenali.co.uk" className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+            <a href="mailto:sphathisiwe@gammadenali.solutions" className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm border hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                 <Mail className="w-6 h-6 text-green-600" />
               </div>
-              <div className="text-left">
+              <div className="text-left overflow-hidden">
                 <h3 className="font-semibold text-slate-900">Email Us</h3>
-                <p className="text-slate-600 text-sm">hello@gammadenali.co.uk</p>
+                <p className="text-slate-600 text-[11px] sm:text-sm truncate">sphathisiwe@gamma...</p>
               </div>
             </a>
 
@@ -44,7 +44,7 @@ export function ContactHero() {
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-slate-900">Visit Us</h3>
-                <p className="text-slate-600 text-sm">Manchester, UK</p>
+                <p className="text-slate-600 text-sm">Derby, UK</p>
               </div>
             </div>
           </div>

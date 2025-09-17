@@ -154,7 +154,7 @@ export function Contact() {
                      type="tel"
                      value={formData.phone}
                      onChange={(e) => handleInputChange('phone', e.target.value)}
-                     placeholder="+44 123 456 7890"
+                     placeholder="+44 742 821 2756"
                      className="w-full"
                  />
              </div>

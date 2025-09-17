@@ -14,7 +14,7 @@ export function ContactInfo() {
             </div>
             <div>
               <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-              <p className="text-slate-600">+44 123 456 7890</p>
+              <p className="text-slate-600">+44 742 821 2756</p>
               <p className="text-slate-500 text-sm">Available 24/7 for emergencies</p>
             </div>
           </div>
@@ -25,7 +25,7 @@ export function ContactInfo() {
             </div>
             <div>
               <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
-              <p className="text-slate-600">hello@gammadenali.co.uk</p>
+              <p className="text-slate-600">sphathisiwe@gammadenali.solutions</p>
               <p className="text-slate-500 text-sm">We respond within 4 hours</p>
             </div>
           </div>
@@ -37,7 +37,7 @@ export function ContactInfo() {
             <div>
               <h4 className="font-semibold text-slate-900 mb-1">Location</h4>
               <p className="text-slate-600">Serving all of England</p>
-              <p className="text-slate-500 text-sm">Based in Manchester, UK</p>
+              <p className="text-slate-500 text-sm">Based in Derby, UK</p>
             </div>
           </div>
 
@@ -60,13 +60,13 @@ export function ContactInfo() {
         <h4 className="font-semibold text-slate-900 mb-4">Prefer to Talk?</h4>
         <div className="space-y-3">
           <Button variant="outline" className="w-full justify-start" asChild>
-            <a href="tel:+44-123-456-7890">
+            <a href="tel:+44-742-821-2756">
               <Phone className="w-5 h-5 mr-3" />
               Call Now for Immediate Support
             </a>
           </Button>
           <Button variant="outline" className="w-full justify-start" asChild>
-            <a href="mailto:hello@gammadenali.co.uk">
+            <a href="mailto:sphathisiwe@gammadenali.solutions">
               <Mail className="w-5 h-5 mr-3" />
               Send a Quick Email
             </a>

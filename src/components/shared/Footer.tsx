@@ -94,19 +94,19 @@ export function Footer() {
               <div className="space-y-3 text-slate-300">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-slate-400" />
-                  <a href="tel:+44-123-456-7890" className="hover:text-white transition-colors">
-                    +44 123 456 7890
+                  <a href="tel:+44-742-821-2756" className="hover:text-white transition-colors">
+                    +44 742 821 2756
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-slate-400" />
-                  <a href="mailto:hello@gammadenali.co.uk" className="hover:text-white transition-colors">
-                    hello@gammadenali.co.uk
+                  <a href="mailto:sphathisiwe@gammadenali.solutions" className="hover:text-white transition-colors">
+                    sphathisiwe@gammadenali.solutions
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-slate-400 mt-0.5" />
-                  <span>Manchester, UK<br />Serving all of England</span>
+                  <span>Derby, UK<br />Serving all of England</span>
                 </div>
               </div>
             </div>

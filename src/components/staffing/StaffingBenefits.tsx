@@ -65,8 +65,8 @@ export function StaffingBenefits() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-700">
-                <a href="tel:+44-123-456-7890">
-                  Call Now: +44 123 456 7890
+                <a href="tel:+44-742-821-2756">
+                  Call Now: +44 742 821 2756
                 </a>
               </Button>
             </div>
