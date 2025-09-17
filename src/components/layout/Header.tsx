@@ -32,7 +32,7 @@ export function Header() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>info@gammadenali.co.uk</span>
+              <span>sphathisiwe@gammadenali.solutions</span>
             </div>
           </div>
           <div className="hidden md:block">
