@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { ContactHero } from '@/components/contact/ContactHero';
-import { ContactForm } from '@/components/contact/ContactForm';
+import { Contact } from '@/components/shared/Contact';
 import { ContactInfo } from '@/components/contact/ContactInfo';
 
 export default function ContactPage() {
@@ -11,7 +11,7 @@ export default function ContactPage() {
       <div className="py-16 bg-slate-50">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
-            <ContactForm />
+            <Contact />
             <ContactInfo />
           </div>
         </div>
